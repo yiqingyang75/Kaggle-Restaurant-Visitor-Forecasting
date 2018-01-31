@@ -1,3 +1,4 @@
+#create your own branch and edit in in
 git remote -v (check which repo are you in)
 git checkout -b yiqing (create your own branch for first time)
 git checkout yiqing (go to your own branch for the other time)
@@ -9,6 +10,19 @@ git push -u origin yiqing (push change in this way instead of directly git push)
 git checkout master (go back to master branch)
 git merge origin/yiqing (merge branch)
 git push  (push the merge into master)
+
+#when you git merge, if there are some conflict
+vi filename (open the file that conflict)
+(manually delete some git note and delete or edit to choose the line you want)
+git add filename (after edit, add the file)
+git commit -m "merge"
+git push
+
+
+#when your branch is behind the master and you want your branch as the same of master
+git checkout yiqing
+git pull origin master (pull master to your branch)
+git push (push the change to your own branch)
 
 
 # If your local repository mess up and you wish to overwrite with git pull
