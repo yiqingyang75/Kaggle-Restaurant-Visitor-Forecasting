@@ -1,0 +1,11 @@
+git remote -v (check which repo are you in)
+git checkout -b yiqing (create your own branch)
+git checkout master (go back to master branch)
+git checkout yiqing (go to your own branch)
+git push -u origin yiqing (push change in this way instead of directly git push) 
+
+
+# If your local repository mess up and you wish to overwrite with git pull
+git checkout master
+git fetch –-all (downloads the latest from remote without merge)
+git reset –-hard origin/master OR git reset –-hard origin/<branch_name> (resets the branch with that you just downloaded)
