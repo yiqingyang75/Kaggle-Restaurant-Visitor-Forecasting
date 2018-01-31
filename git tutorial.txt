@@ -1,8 +1,14 @@
 git remote -v (check which repo are you in)
-git checkout -b yiqing (create your own branch)
-git checkout master (go back to master branch)
-git checkout yiqing (go to your own branch)
+git checkout -b yiqing (create your own branch for first time)
+git checkout yiqing (go to your own branch for the other time)
+git add .
+git commit -m "change"
 git push -u origin yiqing (push change in this way instead of directly git push) 
+
+#if you want to merge your branch into master
+git checkout master (go back to master branch)
+git merge origin/yiqing (merge branch)
+git push  (push the merge into master)
 
 
 # If your local repository mess up and you wish to overwrite with git pull
