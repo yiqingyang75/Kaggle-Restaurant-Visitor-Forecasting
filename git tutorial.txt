@@ -27,5 +27,5 @@ git push (push the change to your own branch)
 
 # If your local repository mess up and you wish to overwrite with git pull
 git checkout master
-git fetch –-all (downloads the latest from remote without merge)
-git reset –-hard origin/master OR git reset –-hard origin/<branch_name> (resets the branch with that you just downloaded)
+git fetch --all (downloads the latest from remote without merge)
+git reset --hard origin/master OR git reset –-hard origin/<branch_name> (resets the branch with that you just downloaded)
