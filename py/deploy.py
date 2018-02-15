@@ -11,7 +11,6 @@ from boto.s3.connection import S3Connection
 #from flask import Flask
 #from flask import request
 #from flask import json
-import numpy as np
 import json
 #import pickle
 
@@ -50,7 +49,8 @@ def lambda_handler(event, context):
     input2 = data['input2']
     #input1 = 0.41290214
     #input2 = 0.89820289
-    clean_data = np.array([input1,input2]).reshape(1,2)
+    clean_data = [input1,input2]
+    #clean_data = np.array([input1,input2]).reshape(1,2)
     pred = predict(clean_data)
     
     body = {
@@ -71,7 +71,8 @@ def lambda_handler(event, context):
 """
 input1 = 0.41290214
 input2 = 0.89820289
-clean_data = np.array([input1,input2]).reshape(1,2)
+clean_data=[input1,input2]
+#clean_data = np.array([input1,input2]).reshape(1,2)
 pred = predict(clean_data)
 
 body = {
