@@ -2,7 +2,7 @@
 """
 Created on Wed Feb 14 16:06:45 2018
 
-@author: yiqin
+@author: yiqing
 """
 from flask import Flask
 from flask import request
@@ -79,3 +79,4 @@ pred = [int(visit) for visit in pred]
 result = dict(zip(id_date,pred))       
 result
 """
+
