@@ -19,16 +19,15 @@ $ curl -H "Content-Type: application/json" -X POST -d '{"id_date":"air_00a91d42b
 If you are interested in how to deploy it using Serverless, refer to [serverless docs](https://serverless.com/framework/docs/getting-started/) and [our specific example](https://github.com/yiqingyang75/Kaggle-Restaurant-Visitor-Forecasting/tree/master/cbrelambda).
 ### Flask Deploy
 [Flask](http://flask.pocoo.org/) is a micro web framework written in Python and based on the Werkzeug toolkit and Jinja2 template engine. In this project, a localhost is being built to host the endpoint.
-#### Setup
-**Clone this repo**
+#### Clone this repo
 ```bash
 $ git clone https://github.com/yiqingyang75/Kaggle-Restaurant-Visitor-Forecasting.git
 ```
-**Run deploy_flask_cbre.py**
+#### Run deploy_flask_cbre.py
 ```bash
 $ python py/deploy_flask_cbre.py
 ```
-**Usage**
+#### Usage
 ```bash
 curl -H "Content-Type: application/json" -X POST -d '{"id_date": "air_00a91d42b08b08d9_2017-04-23"}' http://127.0.0.1:5050/visit
 ```
